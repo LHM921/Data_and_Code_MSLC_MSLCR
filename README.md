@@ -61,6 +61,8 @@ contains the program (function) of
 - (7) **MVTR.EM.r**: main script for implementing the MCECM algorithm for the MVTR model;
 - (8) **MVTC.EM.r**: main script for implementing the MCECM algorithm for the MVTC model;
 - (9) **MVTCR.EM.r**: main script for implementing the MCECM algorithm for the MVTCR model.
+- (10) **IMC.r**: main script for implementing the asymptotic standard errors for parameters.
+- (11) **IMCR.r**: main script for implementing the asymptotic standard errors for regression coefficients.
 
 ## Subfolder: `./code` ##
 `./code`
@@ -70,9 +72,9 @@ contains main scripts of
 - (3) **Fig3.r**: main script for reproducting Figure 3 (run **Table1.r** first or load **bioassay_sep.RData** and **bioassay_nov.RData*  directly, and then run **Fig3.r**);
 - (4) **Fig4.r**: main script for reproducting Figure 4 (run **Table2.r** first or load **lpdata.RData** directly, and then run **Fig4.r**);
 - (5) **Fig5.r**: main script for reproducting Figure 5 (run **Table3.r** first or load **lake.RData** directly, and then run **Fig5.r**);
-- (6) **Fig6.r**: main script for reproducting Figure 6; (read **Smse_all.csv** for 100 Monte Carlo datasets);
-- (7) **Fig7.r**: main script for reproducting Figure 7; (read **Smse_all.csv** for 100 Monte Carlo datasets);
-- (8) **Fig8.r**: main script for reproducting Figure 8; (read **Smse_all.csv** for 100 Monte Carlo datasets);
+- (6) **Fig6.r**: main script for reproducting Supplementary Figure 1; (read **Smse_all.csv** for 100 Monte Carlo datasets);
+- (7) **Fig7.r**: main script for reproducting Supplementary Figure 2; (read **Smse_all.csv** for 100 Monte Carlo datasets);
+- (8) **Fig8.r**: main script for reproducting Supplementary Figure 3; (read **Smse_all.csv** for 100 Monte Carlo datasets);
 - (9) **Table1.r**: main script for reproducting all fitting results of MVN, MVT, MSL, MVNC, MVTC and MSLC models to the bioassay data;
 - (10) **Table2.r**: main script for reproducting all fitting results of MVN, MVT, MSL, MVNC, MVTC and MSLC models to the LPdata;
 - (11) **Table3.r**: main script for reproducting all fitting results of MVNR, MVTR, MSLR, MVNCR, MVTCR and MSLCR models to the Lake data.
@@ -114,16 +116,15 @@ contains
 
 `./result`
 contains 
-- (1) **seed.RData**: the random seed for the bioassays data analysis (Application 1, September) to ensure reproducibility;
-- (2) **bioassay_sep.RData**: the analysis results for the bioassays data (Application 1);
-- (3) **bioassay_nov.RData**: the analysis results for the bioassays data (Application 1);
-- (4) **lpdata.RData**: the analysis results for the La Paloma stream data (Additional Applications);
-- (5) **lake.RData**: the analysis results for the lake Michigan water chemistry data (Application 2).
+- (1) **bioassay_sep.RData**: the analysis results for the bioassays data (Application 1);
+- (2) **bioassay_nov.RData**: the analysis results for the bioassays data (Application 1);
+- (3) **lpdata.RData**: the analysis results for the La Paloma stream data (Additional Applications);
+- (4) **lake.RData**: the analysis results for the lake Michigan water chemistry data (Application 2).
       
 ## Additional Remark ##
 - Note (1): One can directly run each "source(.)" described in **master.r** file in the seperate R session to obtain the results.
 - Note (2): Numerical results have been stored in "./result/", and the fitting results of the considered models obtained by running **Table1.r**, **Table2.r** and **Table3.r** have been stored in `./result/bioassay_sep.RData`, `./result/bioassay_nov.RData`, `./result/lpdata.RData` and `./result/lake.RData`.
 - Note (3): To draw Figure 3, please load the **bioassay_sep.RData** and **bioassay_nov.RData* file in subfolder "./result/", and then run the **Fig3.r** script in subfolder `./code/`. 
-- Note (4): To draw Figure 4, please load the **lpdata.RData* file in subfolder "./result/", and then run **Fig4.r** scripts, respectively, in subfolder `./code/`.
+- Note (4): To draw Supplementary Figure 4, please load the **lpdata.RData* file in subfolder "./result/", and then run **Fig4.r** scripts, respectively, in subfolder `./code/`.
 - Note (5): To draw Figure 5, please load the **lake.RData* file in subfolder "./result/", and then run the **Fig5.r** script in subfolder `./code/`. 
 
