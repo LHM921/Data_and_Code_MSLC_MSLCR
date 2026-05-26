@@ -61,8 +61,8 @@ contains the program (function) of
 - (7) **MVTR.EM.r**: main script for implementing the MCECM algorithm for the MVTR model;
 - (8) **MVTC.EM.r**: main script for implementing the MCECM algorithm for the MVTC model;
 - (9) **MVTCR.EM.r**: main script for implementing the MCECM algorithm for the MVTCR model.
-- (10) **IMC.r**: main script for implementing the asymptotic standard errors for parameters.
-- (11) **IMCR.r**: main script for implementing the asymptotic standard errors for regression coefficients.
+- (10) **IMC.r**: main script for calculating the asymptotic standard errors for parameters in the censored multivariate models.
+- (11) **IMCR.r**: main script for calculating the asymptotic standard errors for parameters in the multivariate censored  regression models.
 
 ## Subfolder: `./code` ##
 `./code`
